@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Магазин</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Интернет-магазин мебели" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo" aria-label="На главную">MyShop</a>
+
+      <nav aria-label="Основная навигация">
+        <ul>
+          <li><a href="#" aria-current="page">Каталог</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button id="cart-button" class="cart-button" aria-label="Открыть корзину" aria-haspopup="dialog" aria-controls="cart-panel">
+        <svg width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+          <path d="M7 4h-2a1 1 0 0 0 0 2h1l2.68 8.04A3 3 0 0 0 11.56 16h5.88a3 3 0 0 0 2.88-2.12L23 6H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="10" cy="20" r="1.5"></circle>
+          <circle cx="18" cy="20" r="1.5"></circle>
+        </svg>
+        <span class="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <h1 class="visually-hidden">Каталог товаров</h1>
+
+    <section aria-label="Список товаров">
+      <div class="products-grid">
+        <article class="product-card" data-id="1" data-price="1990">
+          <a href="#" class="product-link">
+            <img src="img/product-01.jpg" alt="Товар 1" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 1</h2>
+          </a>
+          <p class="product-price"><span class="amount">1 990</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 1 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="2" data-price="2590">
+          <a href="#" class="product-link">
+            <img src="img/product-02.jpg" alt="Товар 2" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 2</h2>
+          </a>
+          <p class="product-price"><span class="amount">2 590</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 2 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="3" data-price="990">
+          <a href="#" class="product-link">
+            <img src="img/product-03.jpg" alt="Товар 3" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 3</h2>
+          </a>
+          <p class="product-price"><span class="amount">990</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 3 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="4" data-price="3490">
+          <a href="#" class="product-link">
+            <img src="img/product-04.jpg" alt="Товар 4" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 4</h2>
+          </a>
+          <p class="product-price"><span class="amount">3 490</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 4 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="5" data-price="1790">
+          <a href="#" class="product-link">
+            <img src="img/product-05.jpg" alt="Товар 5" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 5</h2>
+          </a>
+          <p class="product-price"><span class="amount">1 790</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 5 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="6" data-price="4590">
+          <a href="#" class="product-link">
+            <img src="img/product-06.jpg" alt="Товар 6" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 6</h2>
+          </a>
+          <p class="product-price"><span class="amount">4 590</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 6 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="7" data-price="1290">
+          <a href="#" class="product-link">
+            <img src="img/product-07.jpg" alt="Товар 7" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 7</h2>
+          </a>
+          <p class="product-price"><span class="amount">1 290</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 7 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="8" data-price="2990">
+          <a href="#" class="product-link">
+            <img src="img/product-08.jpg" alt="Товар 8" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 8</h2>
+          </a>
+          <p class="product-price"><span class="amount">2 990</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 8 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="9" data-price="3890">
+          <a href="#" class="product-link">
+            <img src="img/product-09.jpg" alt="Товар 9" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 9</h2>
+          </a>
+          <p class="product-price"><span class="amount">3 890</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 9 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="10" data-price="1490">
+          <a href="#" class="product-link">
+            <img src="img/product-10.jpg" alt="Товар 10" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 10</h2>
+          </a>
+          <p class="product-price"><span class="amount">1 490</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 10 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="11" data-price="2290">
+          <a href="#" class="product-link">
+            <img src="img/product-11.jpg" alt="Товар 11" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 11</h2>
+          </a>
+          <p class="product-price"><span class="amount">2 290</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 11 в корзину">Добавить в корзину</button>
+        </article>
+
+        <article class="product-card" data-id="12" data-price="3190">
+          <a href="#" class="product-link">
+            <img src="img/product-12.jpg" alt="Товар 12" loading="lazy" width="300" height="200" />
+            <h2 class="product-title">Товар 12</h2>
+          </a>
+          <p class="product-price"><span class="amount">3 190</span> <span class="currency">₽</span></p>
+          <button class="add-to-cart" type="button" aria-label="Добавить Товар 12 в корзину">Добавить в корзину</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel" aria-label="Корзина" hidden>
+    <h2>Корзина</h2>
+    <div class="cart-items" aria-live="polite"></div>
+    <div class="cart-summary">
+      <p>Итого: <span id="cart-total">0</span> ₽</p>
+      <button type="button" id="checkout-button">Оформить заказ</button>
+    </div>
+  </aside>
+
+  <style>
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0);
+      white-space: nowrap; border: 0;
+    }
+  </style>
+</body>
+</html>
