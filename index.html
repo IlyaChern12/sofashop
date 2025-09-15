@@ -11,13 +11,14 @@
 <body>
   <header>
     <div class="container">
-      <a href="/" class="logo" aria-label="На главную">MyShop</a>
+      <a href="/" class="logo" aria-label="На главную">SofaShop</a>
 
       <nav aria-label="Основная навигация">
         <ul>
-          <li><a href="#" aria-current="page">Каталог</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="/" aria-current="page">Каталог</a></li>
+          <li><a href="#" button data-modal-target="#modal-about">О нас</a></li>
+          <li><a href="#" data-modal-target="#modal-contacts">Контакты</a></li>
+
         </ul>
       </nav>
 
@@ -148,7 +149,7 @@
     </section>
   </main>
 
-  <aside id="cart-panel" class="cart-panel" aria-label="Корзина" hidden="True">
+  <aside id="cart-panel" class="cart-panel" aria-label="Корзина">
     <h2>Корзина</h2>
     <div class="cart-items" aria-live="polite"></div>
     <div class="cart-summary">
@@ -156,6 +157,27 @@
       <button type="button" id="checkout-button">Оформить заказ</button>
     </div>
   </aside>
+
+  <dialog id="modal-contacts">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <h2>Контакты</h2>
+    <p>Телефон: <span class="copy-text" data-copy="+7 123 456-78-90">+7 123 456-78-90</span></p>
+    <p>Email: <span class="copy-text" data-copy="sofashop@gmail.com">sofashop@gmail.com</span></p>
+  </dialog>
+
+  <dialog id="modal-about">
+    <button class="modal-close" aria-label="Закрыть">&times;</button>
+    <h2>О нас</h2>
+    <p>
+      Мы - команда профессионалов, увлечённых созданием комфорта в вашем доме.
+      В нашем интернет-магазине представлен широкий ассортимент мебели и аксессуаров,
+      тщательно отобранных по качеству и стилю.
+    </p>
+    <p>
+      Ценим каждого клиента и стремимся обеспечить высокий уровень обслуживания,
+      быстрые консультации и поддержку на всех этапах покупки. Ваш комфорт - наша забота!
+    </p>
+  </dialog>
 
   <style>
     .visually-hidden {
@@ -166,5 +188,7 @@
       white-space: nowrap; border: 0;
     }
   </style>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
