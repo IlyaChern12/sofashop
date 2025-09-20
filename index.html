@@ -13,15 +13,16 @@
     <div class="container">
       <a href="/" class="logo" aria-label="На главную">SofaShop</a>
 
-      <nav aria-label="Основная навигация">
+      <nav aria-label="Основное меню">
         <ul>
+          <!-- основное меню сверху -->
           <li><a href="/" aria-current="page">Каталог</a></li>
           <li><a button data-modal-target="#modal-about">О нас</a></li>
           <li><a data-modal-target="#modal-contacts">Контакты</a></li>
-
         </ul>
       </nav>
 
+      <!-- значок корзины и счетчик товаров -->
       <button id="cart-button" class="cart-button" aria-label="Открыть корзину" aria-haspopup="dialog" aria-controls="cart-panel">
         <svg width="24" height="24" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
           <path d="M7 4h-2a1 1 0 0 0 0 2h1l2.68 8.04A3 3 0 0 0 11.56 16h5.88a3 3 0 0 0 2.88-2.12L23 6H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -36,6 +37,7 @@
   <main id="main-content">
     <h1 class="visually-hidden">Каталог товаров</h1>
 
+    <!--карточки товаров-->
     <section aria-label="Список товаров">
       <div class="products-grid">
         <article class="product-card" data-id="1" data-price="25590">
@@ -43,11 +45,9 @@
             <img src="img/product-01.jpg" alt="Стул Lover" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Стул Lover</h2>
           </a>
-
           <p class="product-description">
             Lover - новая коллекция испанского дизайнера Pablo Regano и бренда ARTU. Все модели доступны в любых обивках и цветах покраски основания из массива ясеня. Cтул может быть выполнен на любых основаниях.
           </p>
-
           <p class="product-price"><span class="amount">25 590</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="В корзину">Добавить в корзину</button>
         </article>
@@ -57,11 +57,9 @@
             <img src="img/product-02.jpg" alt="Стол журнальный Стэм" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Стол журнальный Стэм</h2>
           </a>
-
           <p class="product-description">
             Журнальный стол "Стэм" характеризуется нестандартным решением: формой и текстурой декоративного покрытия, стилизованного под дерево. Опоры изготовлены из массива.
           </p>
-
           <p class="product-price"><span class="amount">8 070</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="В корзину">Добавить в корзину</button>
         </article>
@@ -71,11 +69,9 @@
             <img src="img/product-03.jpg" alt="Кресло Inter" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Кресло Inter</h2>
           </a>
-          
           <p class="product-description">
             Inter - нетривиальный и смелый выбор для гостиной или кабинета в современном стиле. Пышные мягкие формы сиденья уравновешиваются легкими, но надежным основанием из массива бука. 
           </p>
-
           <p class="product-price"><span class="amount">34 990</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 3 в корзину">Добавить в корзину</button>
         </article>
@@ -85,11 +81,9 @@
             <img src="img/product-04.jpg" alt="Диван Стив" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Диван Стив</h2>
           </a>
-
           <p class="product-description">
             Дизайнерский диван с эргономичной посадкой. Две декоративные подушки входят в комплект. Каркас из березовой фанеры и массива хвойных пород. Изготовление на заказ в любой обивке, из ассортимента фабрики.
           </p>
-
           <p class="product-price"><span class="amount">141 200</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 4 в корзину">Добавить в корзину</button>
         </article>
@@ -99,11 +93,9 @@
             <img src="img/product-05.jpg" alt="Распашной шкаф Торвалль-3" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Распашной шкаф Торвалль-3</h2>
           </a>
-
           <p class="product-description">
             На частях мебели, изготовленных из сращенного массива, допускается сочетание разных оттенков древесины. Мы используем эту технологию, чтобы сократить отходы производства и сделать дизайн доступным.
           </p>
-
           <p class="product-price"><span class="amount">32 990</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 5 в корзину">Добавить в корзину</button>
         </article>
@@ -113,11 +105,9 @@
             <img src="img/product-06.jpg" alt="Кухонный гарнитур Lazure" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Кухонный гарнитур Lazure</h2>
           </a>
-
           <p class="product-description">
             Кухонный гарнитур Lazure - современное решение для стильной и удобной кухни. Лаконичный дизайн, качественные материалы и продуманная эргономика делают его идеальным выбором для вашего дома.
           </p>
-
           <p class="product-price"><span class="amount">250 590</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 6 в корзину">Добавить в корзину</button>
         </article>
@@ -127,11 +117,9 @@
             <img src="img/product-07.jpg" alt="Прикроватная тумбочка Willow" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Прикроватная тумбочка Willow</h2>
           </a>
-
           <p class="product-description">
             Тумба Willow была продумана как новая базовая модель AMPM. Изготовлена из орехового дерева, с отличительными чертами марки. Она сочетает классический дизайн с современным стилем. 
           </p>
-
           <p class="product-price"><span class="amount"></span>32 290<span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 7 в корзину">Добавить в корзину</button>
         </article>
@@ -141,11 +129,9 @@
             <img src="img/product-08.jpg" alt="Комод Гуд Лак Сага" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Комод Гуд Лак Сага</h2>
           </a>
-
           <p class="product-description">
             Комод Сага - это элегантное решение для хранения, которое сочетает в себе стиль, практичность и продуманный дизайн. Он станет идеальным компаньоном для спальни, создавая уют и порядок.
           </p>
-
           <p class="product-price"><span class="amount">13 600</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 8 в корзину">Добавить в корзину</button>
         </article>
@@ -155,11 +141,9 @@
             <img src="img/product-09.jpg" alt="Письменный стол Кварт" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Письменный стол Кварт</h2>
           </a>
-
           <p class="product-description">
             Письменный стол Кварт - это сочетание функциональности и стиля. Минималистичный дизайн и монохромное решение делают этот стол отличным выбором для любого интерьера.
           </p>
-
           <p class="product-price"><span class="amount">22 999</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 9 в корзину">Добавить в корзину</button>
         </article>
@@ -169,11 +153,9 @@
             <img src="img/product-10.jpg" alt="Кровать Дороти" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Кровать Дороти</h2>
           </a>
-
           <p class="product-description">
             Кровать с оригинальной строчкой изголовья, деликатно привлекает к себе внимание в интерьере. Деревянные ножки оригинальной формы - бочонок выделяют эту модель на фоне остальных.
           </p>
-
           <p class="product-price"><span class="amount">35 999</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 10 в корзину">Добавить в корзину</button>
         </article>
@@ -183,11 +165,9 @@
             <img src="img/product-11.jpg" alt="Шкаф Twin" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Шкаф Twin</h2>
           </a>
-
           <p class="product-description">
             Шкаф объединяет в себе классическую форму, современный дизайн и эргономичность. Две просторные секции со штангами и полками, а также три вместительных ящика позволят организовать комфортное хранение вещей. 
           </p>
-
           <p class="product-price"><span class="amount">102 290</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 11 в корзину">Добавить в корзину</button>
         </article>
@@ -197,11 +177,9 @@
             <img src="img/product-12.jpg" alt="Тумба под телевизор Personal" loading="lazy" width="300" height="200" />
             <h2 class="product-title">Тумба под телевизор Personal</h2>
           </a>
-
           <p class="product-description">
             Тумба Angel Cerda – это сочетание современного дизайна, высокого качества и разумной цены. Она идеально впишется в любой интерьер
           </p>
-
           <p class="product-price"><span class="amount">227 990</span> <span class="currency">₽</span></p>
           <button class="add-to-cart" type="button" aria-label="Добавить Товар 12 в корзину">Добавить в корзину</button>
         </article>
@@ -209,6 +187,7 @@
     </section>
   </main>
 
+  <!--боковая панель корзины-->
   <aside id="cart-panel" class="cart-panel" aria-label="Корзина">
     <div class="cart-header">
         <h2>Корзина</h2>
@@ -219,8 +198,9 @@
         <p>Итого: <span id="cart-total">0</span> ₽</p>
         <button type="button" id="checkout-button">Оформить заказ</button>
     </div>
-</aside>
+  </aside>
 
+  <!--модалка "контакты"-->
   <dialog id="modal-contacts">
     <button class="modal-close" aria-label="Закрыть">&times;</button>
     <h2>Контакты</h2>
@@ -228,6 +208,7 @@
     <p>Email: <span class="copy-text" data-copy="sofashop@gmail.com">sofashop@gmail.com</span></p>
   </dialog>
 
+  <!--модалка "о нас"-->
   <dialog id="modal-about">
     <button class="modal-close" aria-label="Закрыть">&times;</button>
     <h2>О нас</h2>
@@ -242,16 +223,7 @@
     </p>
   </dialog>
 
-  <style>
-    .visually-hidden {
-      position: absolute !important;
-      width: 1px; height: 1px;
-      padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0 0 0 0);
-      white-space: nowrap; border: 0;
-    }
-  </style>
-
+  <!--модалка оформления заказа-->
   <dialog id="order-modal" class="order-modal">
     <button class="modal-close" aria-label="Закрыть">&times;</button>
     <h2>Оформление заказа</h2>
@@ -276,6 +248,7 @@
     </form>
   </dialog>
 
+  <!--модалка "заказ создан"-->
   <dialog id="order-success-modal" class="modal">
     <button class="modal-close" aria-label="Закрыть">&times;</button>
     <p>Заказ создан!</p>
